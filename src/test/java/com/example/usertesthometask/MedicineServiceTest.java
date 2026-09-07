@@ -24,6 +24,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @ExtendWith(MockitoExtension.class)
 public class MedicineServiceTest {
 
+
+
     @Mock
     private MedicineRepository medicineRepository;
 
@@ -68,7 +70,7 @@ public class MedicineServiceTest {
 
         Long id = 1L;
 
-        MedicineEntity medicineEntity = new MedicineEntity(id,"Nimesil",
+        MedicineEntity medicineEntity = new MedicineEntity(id,"mmmm",
                 "Berlin Chemie" ,"Qizdirma eleyhine derman");
 
         MedicineResponseDto medicineResponseDto = new MedicineResponseDto(id,"Nimesil",
@@ -81,7 +83,7 @@ public class MedicineServiceTest {
 
         assertNotNull(result);
         assertEquals(result.getId(),id);
-        assertEquals(result.getName(),"Nimesil");
+        assertEquals(result.getName(),"mmm");
         assertEquals(result.getBrend(),"Berlin Chemie");
         assertEquals(result.getDescription(),"Qizdirma eleyhine derman");
 
