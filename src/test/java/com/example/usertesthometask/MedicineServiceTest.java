@@ -70,7 +70,7 @@ public class MedicineServiceTest {
 
         Long id = 1L;
 
-        MedicineEntity medicineEntity = new MedicineEntity(id,"mmmm",
+        MedicineEntity medicineEntity = new MedicineEntity(id,"Nimesil",
                 "Berlin Chemie" ,"Qizdirma eleyhine derman");
 
         MedicineResponseDto medicineResponseDto = new MedicineResponseDto(id,"Nimesil",
@@ -83,7 +83,7 @@ public class MedicineServiceTest {
 
         assertNotNull(result);
         assertEquals(result.getId(),id);
-        assertEquals(result.getName(),"mmm");
+        assertEquals(result.getName(),"Nimesil");
         assertEquals(result.getBrend(),"Berlin Chemie");
         assertEquals(result.getDescription(),"Qizdirma eleyhine derman");
 
